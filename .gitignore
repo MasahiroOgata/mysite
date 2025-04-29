@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+*.env
+
+# Virtual environment
+../myvenv/
+
+# VSCode settings
+.vscode/
+
+# Migrations (optional)
+*/migrations/__pycache__/
