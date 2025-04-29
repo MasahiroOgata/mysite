@@ -13,3 +13,5 @@ __pycache__/
 
 # Migrations (optional)
 */migrations/__pycache__/
+
+settings_local.py
