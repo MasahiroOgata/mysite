@@ -2,4 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-    return render(request, 'bbs/index.html')
+    context = {
+        'message' : 'Welcome my BBS',
+    }
+    return render(request, 'bbs/index.html', context)
