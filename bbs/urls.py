@@ -4,11 +4,11 @@ from . import views
 app_name = 'bbs'
 
 urlpatterns = [
-    path('', views.index, name='index'),
-    path('<int:id>', views.detail, name='detail'),
+    path('', views.index, name='index'),    
     path('new', views.new, name='new'),
     path('create', views.create, name='create'),
-    path('<int:id>/edit', views.edit, name='edit'),
-    path('<int:id>/update', views.update, name='update'),
-    path('<int:id>/delete', views.delete, name='delete'),
+    path('<str:id>', views.detail, name='detail'),
+    path('<str:id>/edit', views.edit, name='edit'),
+    path('<str:id>/update', views.update, name='update'),
+    path('<str:id>/delete', views.delete, name='delete'),
 ]
